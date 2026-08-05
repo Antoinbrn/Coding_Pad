@@ -515,7 +515,7 @@
       "plot": "Gerbers/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "../../3D models/PCB's/Coding pad_V2.step",
+      "step": "../../3D models/PCB's/Coding pad.step",
       "svg": "",
       "vrml": ""
     },

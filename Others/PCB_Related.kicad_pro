@@ -512,7 +512,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "Gerbers/",
+      "plot": "PCB/Gerbers/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "../../3D models/PCB's/Coding pad.step",
