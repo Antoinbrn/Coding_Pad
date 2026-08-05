@@ -5,32 +5,54 @@
 	(uuid "1b6ec951-a39c-4fa4-9dba-9e4f6afb6d79")
 	(paper "A4")
 	(lib_symbols
-		(symbol "1N4148:1N4148"
+		(symbol "Device:D_Small"
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016)
+				(offset 0.254)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "D"
-				(at 2.54 0.4826 0)
+				(at -1.27 2.032 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
+					(justify left)
 				)
 			)
-			(property "Value" "1N4148"
-				(at 2.54 -2.3114 0)
+			(property "Value" "D_Small"
+				(at -3.81 -2.032 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Diode, small symbol"
 				(at 0 0 0)
 				(effects
 					(font
@@ -39,7 +61,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Sim.Device" "D"
 				(at 0 0 0)
 				(effects
 					(font
@@ -48,7 +70,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Sim.Pins" "1=K 2=A"
 				(at 0 0 0)
 				(effects
 					(font
@@ -57,100 +79,40 @@
 					(hide yes)
 				)
 			)
-			(property "MF" "Good-Ark"
+			(property "ki_keywords" "diode"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "Description_1" "Rectifier Diode Small Signal Switching 100V 0.15A 4ns 2-Pin DO-35"
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "Package" "None"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Price" "None"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "POPULARITY" "58"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "SnapEDA_Link" "https://www.snapeda.com/parts/1N4148/Good-Ark/view-part/?ref=snap"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MP" "1N4148"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Availability" "In Stock"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Check_prices" "https://www.snapeda.com/parts/1N4148/Good-Ark/view-part/?ref=eda"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(symbol "1N4148_0_0"
+			(symbol "D_Small_0_1"
 				(polyline
 					(pts
-						(xy -1.27 1.27) (xy -1.27 0)
+						(xy -0.762 0) (xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 -1.016) (xy -0.762 1.016)
 					)
 					(stroke
 						(width 0.254)
@@ -162,7 +124,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 0) (xy -2.54 0)
+						(xy 0.762 -1.016) (xy -0.762 0) (xy 0.762 1.016) (xy 0.762 -1.016)
 					)
 					(stroke
 						(width 0.254)
@@ -172,126 +134,40 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy -1.27 0) (xy -1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -1.27) (xy 1.27 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 1.27 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy 1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 1.27 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "SpiceOrder 1"
-					(at -2.54 0 0)
-					(effects
-						(font
-							(size 0.4064 0.4064)
-						)
-					)
-				)
-				(text "SpiceOrder 2"
-					(at 2.54 0 0)
-					(effects
-						(font
-							(size 0.4064 0.4064)
-						)
-					)
-				)
+			)
+			(symbol "D_Small_1_1"
 				(pin passive line
 					(at -2.54 0 0)
-					(length 0)
-					(name "~"
+					(length 1.778)
+					(name "K"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "A"
+					(number "1"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
 				)
 				(pin passive line
 					(at 2.54 0 180)
-					(length 0)
-					(name "~"
+					(length 1.778)
+					(name "A"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "C"
+					(number "2"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
@@ -1012,29 +888,27 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "SK6812MINI-E:SK6812MINI-E"
+		(symbol "Mechanical:MountingHole"
 			(pin_names
 				(offset 1.016)
 			)
 			(exclude_from_sim no)
-			(in_bom yes)
+			(in_bom no)
 			(on_board yes)
-			(property "Reference" "U"
-				(at -2.54 2.54 0)
+			(property "Reference" "H"
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
 				)
 			)
-			(property "Value" "SK6812MINI-E"
-				(at -2.54 -7.62 0)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
 				)
 			)
 			(property "Footprint" ""
@@ -1043,6 +917,92 @@
 					(font
 						(size 1.27 1.27)
 					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "SK6812-E:SK6812-E"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at -10.16 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "SK6812-E"
+				(at -10.16 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "SK6812-E:LED_SK6812-E"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
 					(hide yes)
 				)
 			)
@@ -1064,7 +1024,7 @@
 					(hide yes)
 				)
 			)
-			(property "MF" "dongguan occidental optoelectronics"
+			(property "MF" "DONGGUANG OPSCO OPTOELECTRONICS CO., LTD"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1074,7 +1034,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description_1" "SMD LED Addressable, Specialty RoHS"
+			(property "MAXIMUM_PACKAGE_HEIGHT" "0.84mm"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1084,7 +1044,7 @@
 					(hide yes)
 				)
 			)
-			(property "Package" "None"
+			(property "Package" "Package"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1104,7 +1064,7 @@
 					(hide yes)
 				)
 			)
-			(property "SnapEDA_Link" "https://www.snapeda.com/parts/SK6812MINI-E/Luna+Optoelectronics/view-part/?ref=snap"
+			(property "Check_prices" "https://www.snapeda.com/parts/SK6812-E/DONGGUANG+OPSCO+OPTOELECTRONICS+CO.%252C+LTD/view-part/?ref=eda"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1114,7 +1074,7 @@
 					(hide yes)
 				)
 			)
-			(property "MP" "SK6812MINI-E"
+			(property "STANDARD" "Manufacturer recommendations"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1124,7 +1084,7 @@
 					(hide yes)
 				)
 			)
-			(property "Availability" "In Stock"
+			(property "PARTREV" "2"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1134,7 +1094,7 @@
 					(hide yes)
 				)
 			)
-			(property "Check_prices" "https://www.snapeda.com/parts/SK6812MINI-E/Luna+Optoelectronics/view-part/?ref=eda"
+			(property "SnapEDA_Link" "https://www.snapeda.com/parts/SK6812-E/DONGGUANG+OPSCO+OPTOELECTRONICS+CO.%252C+LTD/view-part/?ref=snap"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1144,10 +1104,50 @@
 					(hide yes)
 				)
 			)
-			(symbol "SK6812MINI-E_0_0"
+			(property "MP" "SK6812-E"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Description_1" "SK6812MINI-E is a smart LED control circuit and light emitting circuit in one controlled LED source, which has the shape of a 3528  LED chip."
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Availability" "Not in stock"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MANUFACTURER" "DONGGUANG OPSCO"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(symbol "SK6812-E_0_0"
 				(rectangle
-					(start -7.62 -5.08)
-					(end 10.16 2.54)
+					(start -10.16 -7.62)
+					(end 10.16 7.62)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -1156,9 +1156,27 @@
 						(type background)
 					)
 				)
+				(pin input line
+					(at -15.24 0 0)
+					(length 5.08)
+					(name "DIN"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
 				(pin power_in line
-					(at -10.16 0 0)
-					(length 2.54)
+					(at 15.24 5.08 180)
+					(length 5.08)
 					(name "VDD"
 						(effects
 							(font
@@ -1166,7 +1184,7 @@
 							)
 						)
 					)
-					(number "P$2"
+					(number "1"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -1175,8 +1193,8 @@
 					)
 				)
 				(pin output line
-					(at -10.16 -2.54 0)
-					(length 2.54)
+					(at 15.24 0 180)
+					(length 5.08)
 					(name "DOUT"
 						(effects
 							(font
@@ -1184,7 +1202,7 @@
 							)
 						)
 					)
-					(number "P$4"
+					(number "2"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -1193,26 +1211,8 @@
 					)
 				)
 				(pin power_in line
-					(at 12.7 0 180)
-					(length 2.54)
-					(name "DIN"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "P$3"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 12.7 -2.54 180)
-					(length 2.54)
+					(at 15.24 -5.08 180)
+					(length 5.08)
 					(name "GND"
 						(effects
 							(font
@@ -1220,7 +1220,7 @@
 							)
 						)
 					)
-					(number "P$1"
+					(number "3"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -1775,22 +1775,10 @@
 		)
 	)
 	(junction
-		(at 173.99 120.65)
+		(at 210.82 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "091cd5a4-8b41-4ec0-ae6b-5764a1fbf13b")
-	)
-	(junction
-		(at 229.87 53.34)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6047cbca-aaba-4bf1-b2e1-a73220b94f37")
-	)
-	(junction
-		(at 210.82 73.66)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6f82abea-2ef4-4a92-b492-ac4e602be57f")
+		(uuid "71808dbb-e3d8-4d6e-bc2e-68d67f06d2a2")
 	)
 	(junction
 		(at 226.06 64.77)
@@ -1799,16 +1787,22 @@
 		(uuid "7d5998e1-23bf-429c-b5fc-6905bc23c026")
 	)
 	(junction
-		(at 176.53 100.33)
+		(at 229.87 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7fda6728-beaa-48f1-acc7-a133103a5644")
+		(uuid "809908ca-6822-434f-9e21-bbd26cbd8d39")
 	)
 	(junction
-		(at 210.82 46.99)
+		(at 243.84 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "813f219f-8337-4bf8-923b-a219e6b84c69")
+		(uuid "9403497f-0bdc-4154-a7bc-706d735fd59f")
+	)
+	(junction
+		(at 243.84 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d0c2be07-eae1-4c59-b325-189a8ec06a68")
 	)
 	(junction
 		(at 210.82 53.34)
@@ -1817,22 +1811,24 @@
 		(uuid "ea9d4b0c-af9a-4f54-ba19-f5839131dc22")
 	)
 	(junction
+		(at 210.82 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ece2ef0c-eaa1-4352-b686-8bc0e7b7116d")
+	)
+	(junction
 		(at 245.11 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "eef397d4-7ff7-4468-b784-77d9ad7d8dfe")
 	)
 	(no_connect
-		(at 135.89 55.88)
-		(uuid "4ced71e1-a56e-4017-92da-4e4638ba9da7")
-	)
-	(no_connect
-		(at 135.89 53.34)
-		(uuid "8062010d-8e9e-4fae-bfc2-a66ca769af45")
-	)
-	(no_connect
 		(at 135.89 43.18)
 		(uuid "96c127c4-ace3-42bc-b822-fbcdfdcb4c63")
+	)
+	(no_connect
+		(at 135.89 45.72)
+		(uuid "9b2b6235-3b4f-4bb6-aa9e-89c97bfb1cfa")
 	)
 	(no_connect
 		(at 176.53 45.72)
@@ -1843,36 +1839,18 @@
 		(uuid "a0bf12d1-0c31-4134-9fdd-4f4fc9fd4c92")
 	)
 	(no_connect
-		(at 135.89 50.8)
-		(uuid "a1cbf83d-1c2d-4036-8029-a2d253304758")
-	)
-	(no_connect
-		(at 135.89 48.26)
-		(uuid "a75fa9c9-eb28-4bd0-ac92-7a56cd24ac78")
-	)
-	(no_connect
-		(at 135.89 45.72)
-		(uuid "d4fd9521-a534-4e7e-8312-6f761e44b744")
+		(at 276.86 102.87)
+		(uuid "cb7cc1a6-6797-4eb5-ac28-e2bc5eb94683")
 	)
 	(wire
 		(pts
-			(xy 173.99 120.65) (xy 173.99 124.46)
+			(xy 238.76 97.79) (xy 243.84 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "03f433f6-a5c2-43c0-a415-a25d15a132ad")
-	)
-	(wire
-		(pts
-			(xy 144.78 100.33) (xy 176.53 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "15fb34e1-71c2-4ab9-8bfe-8aade38e879e")
+		(uuid "0aaba687-96ff-4cdd-9e32-fff56df29e37")
 	)
 	(wire
 		(pts
@@ -1896,16 +1874,6 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 109.22) (xy 185.42 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1c6e3d3e-5c2f-4b59-aafc-14aec26531b9")
-	)
-	(wire
-		(pts
 			(xy 147.32 82.55) (xy 134.62 82.55)
 		)
 		(stroke
@@ -1916,13 +1884,13 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 111.76) (xy 173.99 120.65)
+			(xy 243.84 107.95) (xy 243.84 110.49)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "355f8d91-bcae-4103-8847-a326ce3327d8")
+		(uuid "353514bb-4bf0-41e4-98ee-3f45167de49f")
 	)
 	(wire
 		(pts
@@ -1936,13 +1904,23 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 46.99) (xy 210.82 48.26)
+			(xy 210.82 44.45) (xy 210.82 46.99)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "43f9fc6c-d1a8-4267-887b-6b9d8b421419")
+	)
+	(wire
+		(pts
+			(xy 210.82 73.66) (xy 229.87 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49444cd8-3733-4ad5-874a-0e0cd23dce29")
 	)
 	(wire
 		(pts
@@ -1953,6 +1931,16 @@
 			(type default)
 		)
 		(uuid "4da3aaeb-8474-4298-91b6-928a063677f2")
+	)
+	(wire
+		(pts
+			(xy 204.47 102.87) (xy 208.28 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e865dd5-4c98-4a92-bfd5-1d5d0322c19e")
 	)
 	(wire
 		(pts
@@ -1986,16 +1974,6 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 111.76) (xy 175.26 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6ad750de-ee25-4ac8-b34a-5852096135a6")
-	)
-	(wire
-		(pts
 			(xy 210.82 53.34) (xy 229.87 53.34)
 		)
 		(stroke
@@ -2003,6 +1981,16 @@
 			(type default)
 		)
 		(uuid "6add71c8-9ceb-4774-b755-dca89b22ca0a")
+	)
+	(wire
+		(pts
+			(xy 276.86 93.98) (xy 243.84 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c823f2d-0d4c-454a-9ddc-a801cde3aa07")
 	)
 	(wire
 		(pts
@@ -2016,23 +2004,13 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 109.22) (xy 167.64 109.22)
+			(xy 243.84 97.79) (xy 243.84 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "849ea846-6586-4611-81d0-2f5f5a135d7c")
-	)
-	(wire
-		(pts
-			(xy 175.26 111.76) (xy 175.26 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9e36e08d-33ad-465a-b50a-d9a7c4972cfc")
+		(uuid "9472cdfb-0820-4786-bf38-7205d59b86e3")
 	)
 	(wire
 		(pts
@@ -2046,6 +2024,16 @@
 	)
 	(wire
 		(pts
+			(xy 276.86 107.95) (xy 243.84 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a18617aa-c4d2-44ad-96ae-941a1da3f4c5")
+	)
+	(wire
+		(pts
 			(xy 210.82 52.07) (xy 210.82 53.34)
 		)
 		(stroke
@@ -2056,13 +2044,13 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 100.33) (xy 185.42 100.33)
+			(xy 238.76 107.95) (xy 243.84 107.95)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a4bb45cc-4c0a-43a5-bcd5-7de7d3b3a6df")
+		(uuid "a7b1d85a-99be-4d8d-94cf-0548be740909")
 	)
 	(wire
 		(pts
@@ -2076,26 +2064,6 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 111.76) (xy 208.28 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b36a709b-0360-42e9-b84b-97800e8d044b")
-	)
-	(wire
-		(pts
-			(xy 144.78 109.22) (xy 144.78 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b65fdbef-3fbc-43c6-b469-44721d885c5a")
-	)
-	(wire
-		(pts
 			(xy 245.11 64.77) (xy 245.11 80.01)
 		)
 		(stroke
@@ -2106,33 +2074,23 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 73.66) (xy 229.87 73.66)
+			(xy 238.76 102.87) (xy 246.38 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d230d700-de88-4250-9230-9e5fdc41ef0c")
+		(uuid "cba101d2-2d63-4c02-af5d-4de190c3b449")
 	)
 	(wire
 		(pts
-			(xy 229.87 53.34) (xy 254 53.34)
+			(xy 276.86 97.79) (xy 276.86 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e02d2253-82c8-4ea4-b2ef-d501a9eb779a")
-	)
-	(wire
-		(pts
-			(xy 208.28 120.65) (xy 173.99 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e06b5bba-ee8e-4618-a07a-4ed1d7ae2d8e")
+		(uuid "d6382b86-5837-4920-8996-7fcd30b0fdfa")
 	)
 	(wire
 		(pts
@@ -2146,16 +2104,6 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 109.22) (xy 210.82 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eae46e4b-1b92-497f-9c06-be1ea7350231")
-	)
-	(wire
-		(pts
 			(xy 226.06 44.45) (xy 226.06 64.77)
 		)
 		(stroke
@@ -2166,13 +2114,23 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 111.76) (xy 173.99 111.76)
+			(xy 210.82 46.99) (xy 210.82 48.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f941af88-01d0-448f-9a46-00049f876e15")
+		(uuid "f49b70a8-9dee-42d2-92d6-6e50e0e17f90")
+	)
+	(wire
+		(pts
+			(xy 229.87 53.34) (xy 254 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f641061c-b189-4f0c-9f89-2d16f14580f5")
 	)
 	(wire
 		(pts
@@ -2183,16 +2141,6 @@
 			(type default)
 		)
 		(uuid "fb5e433f-f749-415b-82ef-abb3c4a7665c")
-	)
-	(wire
-		(pts
-			(xy 210.82 44.45) (xy 210.82 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fef8c6a0-2303-4f93-8353-876bab3b9cb4")
 	)
 	(global_label "B"
 		(shape input)
@@ -2251,6 +2199,28 @@
 		(uuid "256e732b-01ae-412a-9702-eb62996129e4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 226.06 87.8333 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "AUP"
+		(shape input)
+		(at 135.89 50.8 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "434c2223-7214-46f4-88f1-aede36fafba4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 129.2157 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2350,22 +2320,22 @@
 	)
 	(global_label "LED"
 		(shape input)
-		(at 210.82 109.22 0)
+		(at 204.47 102.87 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "7c9be4f0-1321-4c41-b025-9e53895e3006")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 217.2523 109.22 0)
+			(at 198.0377 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -2405,6 +2375,28 @@
 		(uuid "8fd4eeed-114a-4512-8ad2-6b5390ac8ff4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 245.11 87.8333 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LED"
+		(shape input)
+		(at 135.89 55.88 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9c6a4df5-0cbf-42c3-8052-1f398b95fbdb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 129.4577 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2480,6 +2472,28 @@
 			)
 		)
 	)
+	(global_label "COL2"
+		(shape input)
+		(at 135.89 48.26 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b7f45fb0-bfd6-4479-9e0c-adbc59a18eb0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 128.0667 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "BDOWN"
 		(shape input)
 		(at 147.32 85.09 180)
@@ -2543,6 +2557,92 @@
 				)
 				(justify right)
 				(hide yes)
+			)
+		)
+	)
+	(global_label "BDOWN"
+		(shape input)
+		(at 135.89 53.34 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fcb1b092-a36e-488a-a513-dc8f88271a26")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 126.2524 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 180.34 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "11965f52-3f41-4bdc-ae97-056c6d98528a")
+		(property "Reference" "H2"
+			(at 182.88 100.3299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 182.88 102.8699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.7mm"
+			(at 180.34 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 180.34 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 180.34 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "PCB_Related"
+				(path "/1b6ec951-a39c-4fa4-9dba-9e4f6afb6d79"
+					(reference "H2")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -2646,392 +2746,6 @@
 			(project ""
 				(path "/1b6ec951-a39c-4fa4-9dba-9e4f6afb6d79"
 					(reference "U4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 176.53 100.33 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "36141b01-977e-45b4-b1ba-1a19aa07061b")
-		(property "Reference" "#PWR05"
-			(at 176.53 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 176.53 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 176.53 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 176.53 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 176.53 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f9269330-e822-4877-b524-e363846a2b92")
-		)
-		(instances
-			(project "PCB_Related"
-				(path "/1b6ec951-a39c-4fa4-9dba-9e4f6afb6d79"
-					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "1N4148:1N4148")
-		(at 210.82 71.12 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "38ddce3b-f225-4a7a-b3d6-64504959b842")
-		(property "Reference" "D4"
-			(at 213.36 69.8499 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1N4148"
-			(at 213.36 72.3899 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 210.82 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 210.82 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 210.82 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" "Good-Ark"
-			(at 210.82 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "Rectifier Diode Small Signal Switching 100V 0.15A 4ns 2-Pin DO-35"
-			(at 210.82 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "None"
-			(at 210.82 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 210.82 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "POPULARITY" "58"
-			(at 210.82 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/1N4148/Good-Ark/view-part/?ref=snap"
-			(at 210.82 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "1N4148"
-			(at 210.82 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 210.82 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/1N4148/Good-Ark/view-part/?ref=eda"
-			(at 210.82 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "C"
-			(uuid "5530d6d3-2d60-43dc-82da-13aea439c31b")
-		)
-		(pin "A"
-			(uuid "23a015f9-db11-4257-b2d4-632deb1f01d5")
-		)
-		(instances
-			(project "PCB_Related"
-				(path "/1b6ec951-a39c-4fa4-9dba-9e4f6afb6d79"
-					(reference "D4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "1N4148:1N4148")
-		(at 229.87 50.8 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3f10c38a-c4a8-476f-89f0-f760e6506d39")
-		(property "Reference" "D2"
-			(at 232.41 49.5299 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1N4148"
-			(at 232.41 52.0699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 229.87 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 229.87 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 229.87 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" "Good-Ark"
-			(at 229.87 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "Rectifier Diode Small Signal Switching 100V 0.15A 4ns 2-Pin DO-35"
-			(at 229.87 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "None"
-			(at 229.87 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 229.87 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "POPULARITY" "58"
-			(at 229.87 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/1N4148/Good-Ark/view-part/?ref=snap"
-			(at 229.87 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "1N4148"
-			(at 229.87 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 229.87 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/1N4148/Good-Ark/view-part/?ref=eda"
-			(at 229.87 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "C"
-			(uuid "f76789a5-985e-46d9-906a-db87ff970449")
-		)
-		(pin "A"
-			(uuid "e7870754-7488-4f43-9798-7a2f1dc25f39")
-		)
-		(instances
-			(project "PCB_Related"
-				(path "/1b6ec951-a39c-4fa4-9dba-9e4f6afb6d79"
-					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -3257,166 +2971,6 @@
 		)
 	)
 	(symbol
-		(lib_id "1N4148:1N4148")
-		(at 210.82 49.53 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "428ed4f4-7fa9-4bd5-ab5a-51a823839136")
-		(property "Reference" "D1"
-			(at 213.36 48.2599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1N4148"
-			(at 213.36 50.7999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 210.82 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 210.82 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 210.82 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" "Good-Ark"
-			(at 210.82 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "Rectifier Diode Small Signal Switching 100V 0.15A 4ns 2-Pin DO-35"
-			(at 210.82 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "None"
-			(at 210.82 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 210.82 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "POPULARITY" "58"
-			(at 210.82 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/1N4148/Good-Ark/view-part/?ref=snap"
-			(at 210.82 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "1N4148"
-			(at 210.82 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 210.82 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/1N4148/Good-Ark/view-part/?ref=eda"
-			(at 210.82 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "C"
-			(uuid "db21958c-3029-40a7-b772-71a48d4974dc")
-		)
-		(pin "A"
-			(uuid "2bccbceb-22f1-4e4a-8dab-380aae62d47f")
-		)
-		(instances
-			(project ""
-				(path "/1b6ec951-a39c-4fa4-9dba-9e4f6afb6d79"
-					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 134.62 83.82 0)
 		(unit 1)
@@ -3477,6 +3031,94 @@
 			(project ""
 				(path "/1b6ec951-a39c-4fa4-9dba-9e4f6afb6d79"
 					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small")
+		(at 210.82 71.12 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "583637e5-3665-44f0-a787-707c9d1bee23")
+		(property "Reference" "D3"
+			(at 213.36 69.8499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D_Small"
+			(at 213.36 72.3899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(at 210.82 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 210.82 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 210.82 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 210.82 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 210.82 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9c1a0ca8-8006-4a99-89e9-3d12bb5d8fd0")
+		)
+		(pin "2"
+			(uuid "46626f30-57de-481d-ba6d-7d4c558a1c4e")
+		)
+		(instances
+			(project "PCB_Related"
+				(path "/1b6ec951-a39c-4fa4-9dba-9e4f6afb6d79"
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -3702,6 +3344,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Small")
+		(at 229.87 71.12 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "79be37c7-840b-453b-a0aa-e3c03b914a24")
+		(property "Reference" "D4"
+			(at 232.41 69.8499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D_Small"
+			(at 232.41 72.3899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(at 229.87 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 229.87 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 229.87 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 229.87 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 229.87 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "66a3ece0-bf8e-4268-ab48-3cc9e4def75f")
+		)
+		(pin "2"
+			(uuid "2e80aee1-b859-4d7d-9768-773e6ca0736b")
+		)
+		(instances
+			(project "PCB_Related"
+				(path "/1b6ec951-a39c-4fa4-9dba-9e4f6afb6d79"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "MX1A-11NN:MX1A-11NN")
 		(at 237.49 44.45 0)
 		(unit 1)
@@ -3921,35 +3651,34 @@
 		)
 	)
 	(symbol
-		(lib_id "1N4148:1N4148")
-		(at 254 50.8 270)
+		(lib_id "power:VCC")
+		(at 243.84 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a1a92cbd-760b-4ece-af59-d5d7f8cb10a7")
-		(property "Reference" "D5"
-			(at 256.54 49.5299 90)
+		(uuid "941e747d-a7b0-4778-bd89-321689b8abbe")
+		(property "Reference" "#PWR03"
+			(at 243.84 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Value" "1N4148"
-			(at 256.54 52.0699 90)
+		(property "Value" "VCC"
+			(at 243.84 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 254 50.8 0)
+		(property "Footprint" ""
+			(at 243.84 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3958,7 +3687,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 254 50.8 0)
+			(at 243.84 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3966,8 +3695,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 254 50.8 0)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 243.84 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3975,106 +3704,77 @@
 				(hide yes)
 			)
 		)
-		(property "MF" "Good-Ark"
-			(at 254 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "Rectifier Diode Small Signal Switching 100V 0.15A 4ns 2-Pin DO-35"
-			(at 254 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "None"
-			(at 254 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 254 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "POPULARITY" "58"
-			(at 254 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/1N4148/Good-Ark/view-part/?ref=snap"
-			(at 254 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "1N4148"
-			(at 254 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 254 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/1N4148/Good-Ark/view-part/?ref=eda"
-			(at 254 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "C"
-			(uuid "97253484-33ec-4bf5-b888-5bd93a5ed35c")
-		)
-		(pin "A"
-			(uuid "57c56e4f-57a6-4a3d-b221-b852e99c778c")
+		(pin "1"
+			(uuid "e8c9c9a8-19c9-4cdd-9a00-84aef77bcc77")
 		)
 		(instances
 			(project "PCB_Related"
 				(path "/1b6ec951-a39c-4fa4-9dba-9e4f6afb6d79"
-					(reference "D5")
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 181.61 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "949c7045-ac7c-4d90-81fe-9f8c0dff1868")
+		(property "Reference" "H4"
+			(at 184.15 114.2999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 184.15 116.8399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.7mm"
+			(at 181.61 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 181.61 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 181.61 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "PCB_Related"
+				(path "/1b6ec951-a39c-4fa4-9dba-9e4f6afb6d79"
+					(reference "H4")
 					(unit 1)
 				)
 			)
@@ -4300,6 +4000,312 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 180.34 109.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a7f9fef8-de2a-47c8-a2b8-8299d8efd224")
+		(property "Reference" "H3"
+			(at 182.88 107.9499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 182.88 110.4899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.7mm"
+			(at 180.34 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 180.34 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 180.34 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "PCB_Related"
+				(path "/1b6ec951-a39c-4fa4-9dba-9e4f6afb6d79"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small")
+		(at 210.82 49.53 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ad6fcb24-943b-497b-be4b-51adcbc1d9d7")
+		(property "Reference" "D1"
+			(at 213.36 48.2599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D_Small"
+			(at 213.36 50.7999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(at 210.82 49.53 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 210.82 49.53 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 210.82 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 210.82 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 210.82 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e8482911-a66e-43d5-9681-af5f986d0e72")
+		)
+		(pin "2"
+			(uuid "0fd6425f-0afa-4e1d-839b-1d4188a0483f")
+		)
+		(instances
+			(project ""
+				(path "/1b6ec951-a39c-4fa4-9dba-9e4f6afb6d79"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 243.84 110.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b09e1edd-7962-4eed-bb59-dcc0d55ef7c5")
+		(property "Reference" "#PWR06"
+			(at 243.84 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 243.84 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 243.84 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 243.84 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 243.84 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fcf73d30-e06b-4150-a971-c7d06cbfd5b4")
+		)
+		(instances
+			(project "PCB_Related"
+				(path "/1b6ec951-a39c-4fa4-9dba-9e4f6afb6d79"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small")
+		(at 254 50.8 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b4a10ad9-8240-45ba-aabf-4247159049ff")
+		(property "Reference" "D5"
+			(at 256.54 49.5299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D_Small"
+			(at 256.54 52.0699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(at 254 50.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 254 50.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 254 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 254 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 254 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6ec6ab36-316e-44e0-a10c-0a59947b471c")
+		)
+		(pin "2"
+			(uuid "e6934e95-e727-43a4-b6ff-699697293f77")
+		)
+		(instances
+			(project "PCB_Related"
+				(path "/1b6ec951-a39c-4fa4-9dba-9e4f6afb6d79"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VCC")
 		(at 179.07 39.37 0)
 		(unit 1)
@@ -4366,33 +4372,17 @@
 		)
 	)
 	(symbol
-		(lib_id "SK6812MINI-E:SK6812MINI-E")
-		(at 195.58 109.22 0)
+		(lib_id "SK6812-E:SK6812-E")
+		(at 223.52 102.87 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c7fad8a3-8bc5-4523-b437-dc201bf1021f")
-		(property "Reference" "U2"
-			(at 196.85 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SK6812MINI-E"
-			(at 196.85 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "SK6812MINI-E:SK6812MINI-E"
-			(at 195.58 109.22 0)
+		(uuid "dc01586a-38c0-4fb2-ba63-e7fc48fe287c")
+		(property "Reference" "D8"
+			(at 223.52 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4400,8 +4390,27 @@
 				(hide yes)
 			)
 		)
+		(property "Value" "SK6812-E"
+			(at 223.52 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SK6812-E:LED_SK6812-E"
+			(at 223.52 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
 		(property "Datasheet" ""
-			(at 195.58 109.22 0)
+			(at 223.52 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4410,7 +4419,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 195.58 109.22 0)
+			(at 223.52 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4418,18 +4427,8 @@
 				(hide yes)
 			)
 		)
-		(property "MF" "dongguan occidental optoelectronics"
-			(at 195.58 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "SMD LED Addressable, Specialty RoHS"
-			(at 195.58 109.22 0)
+		(property "MF" "DONGGUANG OPSCO OPTOELECTRONICS CO., LTD"
+			(at 223.52 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4438,8 +4437,18 @@
 				(hide yes)
 			)
 		)
-		(property "Package" "None"
-			(at 195.58 109.22 0)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "0.84mm"
+			(at 223.52 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "Package"
+			(at 223.52 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4449,7 +4458,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 195.58 109.22 0)
+			(at 223.52 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4458,8 +4467,8 @@
 				(hide yes)
 			)
 		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/SK6812MINI-E/Luna+Optoelectronics/view-part/?ref=snap"
-			(at 195.58 109.22 0)
+		(property "Check_prices" "https://www.snapeda.com/parts/SK6812-E/DONGGUANG+OPSCO+OPTOELECTRONICS+CO.%252C+LTD/view-part/?ref=eda"
+			(at 223.52 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4468,8 +4477,8 @@
 				(hide yes)
 			)
 		)
-		(property "MP" "SK6812MINI-E"
-			(at 195.58 109.22 0)
+		(property "STANDARD" "Manufacturer recommendations"
+			(at 223.52 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4478,8 +4487,8 @@
 				(hide yes)
 			)
 		)
-		(property "Availability" "In Stock"
-			(at 195.58 109.22 0)
+		(property "PARTREV" "2"
+			(at 223.52 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4488,8 +4497,8 @@
 				(hide yes)
 			)
 		)
-		(property "Check_prices" "https://www.snapeda.com/parts/SK6812MINI-E/Luna+Optoelectronics/view-part/?ref=eda"
-			(at 195.58 109.22 0)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/SK6812-E/DONGGUANG+OPSCO+OPTOELECTRONICS+CO.%252C+LTD/view-part/?ref=snap"
+			(at 223.52 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4498,22 +4507,62 @@
 				(hide yes)
 			)
 		)
-		(pin "P$1"
-			(uuid "1db05e46-6875-4772-82fa-49b8e521840c")
+		(property "MP" "SK6812-E"
+			(at 223.52 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
 		)
-		(pin "P$2"
-			(uuid "17202124-6c54-4125-a2e7-9e55413caa38")
+		(property "Description_1" "SK6812MINI-E is a smart LED control circuit and light emitting circuit in one controlled LED source, which has the shape of a 3528  LED chip."
+			(at 223.52 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
 		)
-		(pin "P$4"
-			(uuid "08a4f139-0e36-4246-8fb3-95fd68822361")
+		(property "Availability" "Not in stock"
+			(at 223.52 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
 		)
-		(pin "P$3"
-			(uuid "20c5379e-6ace-4fce-9e15-8f28d6a15ecf")
+		(property "MANUFACTURER" "DONGGUANG OPSCO"
+			(at 223.52 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "841db57c-1577-42ed-96d7-247382d69ade")
+		)
+		(pin "4"
+			(uuid "b6bd1a75-f0da-441d-9c0f-26dae199451e")
+		)
+		(pin "1"
+			(uuid "4c4cfe01-9248-4029-8f0d-3962b50cea7b")
+		)
+		(pin "2"
+			(uuid "81c7df59-21ff-4031-8f01-ee700dda0537")
 		)
 		(instances
 			(project "PCB_Related"
 				(path "/1b6ec951-a39c-4fa4-9dba-9e4f6afb6d79"
-					(reference "U2")
+					(reference "D8")
 					(unit 1)
 				)
 			)
@@ -4597,35 +4646,35 @@
 		)
 	)
 	(symbol
-		(lib_id "1N4148:1N4148")
-		(at 229.87 71.12 270)
+		(lib_id "Device:D_Small")
+		(at 229.87 50.8 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e2280180-3035-4c4d-87b0-96d326d9af08")
-		(property "Reference" "D3"
-			(at 232.41 69.8499 90)
+		(uuid "e6f20157-96bd-424f-a86b-516e4f622184")
+		(property "Reference" "D2"
+			(at 232.41 49.5299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "1N4148"
-			(at 232.41 72.3899 90)
+		(property "Value" "D_Small"
+			(at 232.41 52.0699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 229.87 71.12 0)
+			(at 229.87 50.8 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4633,8 +4682,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 229.87 71.12 0)
+		(property "Datasheet" "~"
+			(at 229.87 50.8 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4642,8 +4691,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 229.87 71.12 0)
+		(property "Description" "Diode, small symbol"
+			(at 229.87 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4651,260 +4700,34 @@
 				(hide yes)
 			)
 		)
-		(property "MF" "Good-Ark"
-			(at 229.87 71.12 0)
+		(property "Sim.Device" "D"
+			(at 229.87 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 				(hide yes)
 			)
 		)
-		(property "Description_1" "Rectifier Diode Small Signal Switching 100V 0.15A 4ns 2-Pin DO-35"
-			(at 229.87 71.12 0)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 229.87 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 				(hide yes)
 			)
 		)
-		(property "Package" "None"
-			(at 229.87 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
+		(pin "1"
+			(uuid "a9c4b6ec-224e-4edf-b6f1-290aeef6c213")
 		)
-		(property "Price" "None"
-			(at 229.87 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "POPULARITY" "58"
-			(at 229.87 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/1N4148/Good-Ark/view-part/?ref=snap"
-			(at 229.87 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "1N4148"
-			(at 229.87 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 229.87 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/1N4148/Good-Ark/view-part/?ref=eda"
-			(at 229.87 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "C"
-			(uuid "8ba0171b-5772-43a9-ad5f-ffb047519986")
-		)
-		(pin "A"
-			(uuid "3b75a617-fe3a-46f9-947d-1fc433605ac3")
+		(pin "2"
+			(uuid "e481a3c4-af23-4f0a-8632-b31b1ffe02ca")
 		)
 		(instances
 			(project "PCB_Related"
 				(path "/1b6ec951-a39c-4fa4-9dba-9e4f6afb6d79"
-					(reference "D3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "SK6812MINI-E:SK6812MINI-E")
-		(at 154.94 109.22 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "eeadff3d-3240-4a1f-943f-86c290c393d9")
-		(property "Reference" "U1"
-			(at 156.21 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SK6812MINI-E"
-			(at 156.21 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "SK6812MINI-E:SK6812MINI-E"
-			(at 154.94 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 154.94 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 154.94 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" "dongguan occidental optoelectronics"
-			(at 154.94 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "SMD LED Addressable, Specialty RoHS"
-			(at 154.94 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "None"
-			(at 154.94 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 154.94 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/SK6812MINI-E/Luna+Optoelectronics/view-part/?ref=snap"
-			(at 154.94 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "SK6812MINI-E"
-			(at 154.94 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 154.94 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/SK6812MINI-E/Luna+Optoelectronics/view-part/?ref=eda"
-			(at 154.94 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "P$1"
-			(uuid "cfcd0a9a-8abb-4e02-a521-481313e4077c")
-		)
-		(pin "P$2"
-			(uuid "ecd0f244-20eb-4513-9c7f-ddbf25a0747e")
-		)
-		(pin "P$4"
-			(uuid "e313b096-6014-47c8-a5bc-510edf2bb2c3")
-		)
-		(pin "P$3"
-			(uuid "3efa27aa-56bc-4d50-8b10-0787d7c696f2")
-		)
-		(instances
-			(project ""
-				(path "/1b6ec951-a39c-4fa4-9dba-9e4f6afb6d79"
-					(reference "U1")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -4977,17 +4800,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 173.99 124.46 0)
+		(lib_id "SK6812-E:SK6812-E")
+		(at 261.62 102.87 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "f9694f90-7ad2-442f-940e-c2bb2310daa0")
-		(property "Reference" "#PWR03"
-			(at 173.99 130.81 0)
+		(uuid "fe89d66f-002e-4934-9a15-da6d3d006304")
+		(property "Reference" "D9"
+			(at 261.62 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4995,25 +4818,27 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 173.99 129.54 0)
+		(property "Value" "SK6812-E"
+			(at 261.62 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Footprint" ""
-			(at 173.99 124.46 0)
+		(property "Footprint" "SK6812-E:LED_SK6812-E"
+			(at 261.62 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 173.99 124.46 0)
+			(at 261.62 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5021,22 +4846,151 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 173.99 124.46 0)
+		(property "Description" ""
+			(at 261.62 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(property "MF" "DONGGUANG OPSCO OPTOELECTRONICS CO., LTD"
+			(at 261.62 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "0.84mm"
+			(at 261.62 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "Package"
+			(at 261.62 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 261.62 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/SK6812-E/DONGGUANG+OPSCO+OPTOELECTRONICS+CO.%252C+LTD/view-part/?ref=eda"
+			(at 261.62 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "Manufacturer recommendations"
+			(at 261.62 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "2"
+			(at 261.62 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/SK6812-E/DONGGUANG+OPSCO+OPTOELECTRONICS+CO.%252C+LTD/view-part/?ref=snap"
+			(at 261.62 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "SK6812-E"
+			(at 261.62 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "SK6812MINI-E is a smart LED control circuit and light emitting circuit in one controlled LED source, which has the shape of a 3528  LED chip."
+			(at 261.62 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "Not in stock"
+			(at 261.62 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "DONGGUANG OPSCO"
+			(at 261.62 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "2b5ac8cf-b77a-4615-b185-5954d5f37acc")
+		)
+		(pin "4"
+			(uuid "01bc742f-f72a-4dbb-ae6b-21a6cfcee20f")
 		)
 		(pin "1"
-			(uuid "296d7785-3e8d-4298-89b9-6811ec749d6f")
+			(uuid "15188791-48f0-4e4e-85cb-ba2b5315dd69")
+		)
+		(pin "2"
+			(uuid "ebc25520-d147-41a3-a4cd-2cffd81fb3bc")
 		)
 		(instances
 			(project "PCB_Related"
 				(path "/1b6ec951-a39c-4fa4-9dba-9e4f6afb6d79"
-					(reference "#PWR03")
+					(reference "D9")
 					(unit 1)
 				)
 			)
