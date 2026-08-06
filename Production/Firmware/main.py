@@ -1,32 +1,67 @@
 print("Hackpad Testing!")
 
-import board
-
 from kmk.kmk_keyboard import KMKKeyboard
 from kmk.keys import KC
 from kmk.scanners import DiodeOrientation
-from kmk.extensions.media_keys import MediaKeys
 
-print(dir(board))
+#Extensions and modules
+from kmk.modules.encoder import EncoderHandler
+from kmk.extensions.peg_rgb import RGB, AnimationModes
+from kmk.modules.macros import Macros, Press, Release, Tap, Delay
 
 keyboard = KMKKeyboard()
-keyboard.extensions.append(MediaKeys())
 
-keyboard.col_pins = (board.D11, board.D10) # Col 0, Col 1
-keyboard.row_pins = (board.D9, board.D8) # Row 0, Row 1
+macros = Macros()
+keyboard.modules.append(macros)
+
+#Direct Matrix config
+keyboard.row_pins = (board.D8, board.D7)
+keyboard.col_pins = (board.D10, board.D9,board.D3)
 keyboard.diode_orientation = DiodeOrientation.COL2ROW
 
-# RGB imports
-rgb = RGB(pixel_pin=board.GP29, num_pixels=4)
-keyboard.extensions.append(rgb)
+#Rotary Encoder Config
+encoder_handler = EncoderHandler()
+keyboard.modules.append(encoder_handler)
 
-keyboard.keymap = [
-    [
-        KC.LTCL(KC.C), KC.LTCL(KC.V),
-        KC.VOLU,        KC.VOLD,
-    ]
+encoder_handler.pins = (
+    # pin a, pin b, button pin
+    (board.D4, board.D5, None),
+)
+
+encoder_handler.map = [
+    (
+        (KC.AUDIO_VOL_UP, KC.AUDIO_VOL_DOWN, KC.AUDIO_MUTE),
+    )
 ]
 
+
+rgb = RGB(
+    pixel_pin = board.D6,
+    num_pixel = 2,
+    animation_mode = AnimationModes.STATIC,
+    colors = [(51, 0, 102)]
+)
+keyboard.extensions.append(rbg)
+
+#Custom macros
+#opens Gmail
+OPEN_GMAIL = KC.MACRO(
+    Press(KC.LWIN),
+    Tap(KC.R),
+    Release(KC.LWIN),
+    Delay(200),
+    "https://gmail.com"
+    Tap(KC.ENTER)
+)
+
+#Layout
+keyboard.keymap = [
+    [
+        KC.LCTL(KC.C), KC.LCTL(KC.V), KC.AUDIO_MUTE,
+
+        OPEN_GMAIL, KC.CALCULATOR, KC.NO,
+    ]
+]
 
 if __name__ == '__main__':
     keyboard.go()

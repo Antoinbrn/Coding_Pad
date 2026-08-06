@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.25,
-          "height": 0.35,
-          "width": 0.35
+          "drill": 0.0,
+          "height": 1.6,
+          "width": 0.82
         },
         "silk_line_width": 0.1524,
         "silk_text_italic": false,
@@ -512,10 +512,10 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "Gerbers/",
+      "plot": "PCB/Gerbers/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "../../3D models/PCB's/Coding pad.step",
+      "step": "../../3D models/PCB's/Coding_pad.step",
       "svg": "",
       "vrml": ""
     },
